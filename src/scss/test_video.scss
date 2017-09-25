@@ -1,0 +1,40 @@
+.wrap{width: 100%; min-height: 100%; height: 2000px;
+  >*{width: 1500px; margin: 0 auto;}
+}
+header{height: 60px; padding: 20px;
+  >h1{width: 100%; height: 100%; font-size: 25px; text-indent: 30px; line-height: 60px; color: #456789;}
+}
+div.ved_div{height: 350px; overflow-x: scroll; overflow-y: hidden;}
+div.video_frame{width: 2550px; height: 100%;
+  >.iframe_box{width: 300px; height: 100%; margin-right: 30px; margin-bottom: 20px; float: left; display: inline;
+    &:last-child{margin-right: 0;}
+  }
+  iframe{width: 100%; height: 168px; padding-bottom: 20px; border-bottom: 1px dotted #afafaf;}
+  .video_text{width: 100%; height: 50px;
+    >*{width: auto; height: auto;}
+    >dt{color: #7a7a7a; font-size: 18px; font-weight: 600; line-height: 25px;
+      &::selection{background-color: #fa9; color: #a5a5a5;}
+      &::-moz-selection{background-color: #fa9; color: #a5a5a5;}
+    }
+    >dd{color: #494949; font-size: 15px; font-weight: 200; line-height: 20px;}
+  }
+}
+
+/* IE용 Scroll bar Style */
+html {
+  scrollbar-3dLight-Color: #efefef;
+  /* 스크롤바 좌우 위아래 화살표 영역 */
+  scrollbar-arrow-color: #ㄹㄹㄹ;
+  scrollbar-base-color: #efefef;
+  scrollbar-Face-Color: #dfdfdf;
+  scrollbar-Track-Color: #efefef;
+  scrollbar-DarkShadow-Color: #efefef;
+  scrollbar-Highlight-Color: #efefef;
+  scrollbar-Shadow-Color: #efefef
+}
+
+/* Chrome, Safari용 스크롤 바 */
+.ved_div::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; } /* 스크롤 바 크기 */
+.vd_div::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {/*display: block; height: 10px; background: url('./images/bg.png') #efefef*/} /* 좌우 위아래 화살표 영역 */
+.ved_div::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0, 0.2)} /* 스크롤 바가 움직이는 영역 */
+.ved_div::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: #faa; -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px #e9e9e9} /* 스크롤 바 자체 스타일 */

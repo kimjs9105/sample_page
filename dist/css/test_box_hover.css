@@ -1,0 +1,124 @@
+.wrap {
+	width: 100%;
+	height: auto;
+}
+
+.wrap > * {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.hidden {
+	position: relative;
+	z-index: 123456789;
+}
+
+.hidden > a {
+	width: 150px;
+	height: 30px;
+	padding: 15px 50px;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	background-color: #292929;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.hidden > a:focus {
+	top: 0;
+}
+
+header {
+	height: 40px;
+	padding: 30px 0;
+}
+
+header h1 {
+	width: 400px;
+	height: 40px;
+	float: left;
+}
+
+header h1 > a {
+	widht: 100%;
+	height: 100%;
+	color: #5f5f5f;
+	font-size: 22px;
+	line-height: 40px;
+}
+
+header nav {
+	width: 1000px;
+	height: 25px;
+	float: right;
+	margin-top: 15px;
+}
+
+header nav > ul {
+	widht: 100%;
+	height: 100%;
+}
+
+header .nav_gnb {
+	width: 220px;
+	height: 100%;
+	float: left;
+	margin-right: 40px;
+}
+
+header .nav_gnb > a {
+	width: 100%;
+	height: 100%;
+	color: #9f9f9f;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+}
+
+header .nav_gnb:last-child {
+	margin-right: 0;
+}
+
+section {
+	height: 900px;
+	background-color: #eee;
+	padding: 50px;
+}
+
+section .test_box {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+section .test_box > a {
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+section .test_box > a > span {
+	width: 300px;
+	height: 300px;
+	display: block;
+	position: absolute;
+	color: #fff;
+	font-size: 50px;
+	line-height: 300px;
+	text-align: center;
+}
+
+section .test_box .org_span {
+	background-color: #fa9;
+	top: 0;
+	left: 0;
+}
+
+section .test_box .hov_span {
+	background-color: #9af;
+	top: -300px;
+	left: -300px;
+}

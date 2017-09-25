@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>test_box_hover</title>
+    <link rel="stylesheet" href="css/eric-meyer-reset.css">
+    <link rel="stylesheet" href="css/test_box_hover.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="hidden">
+        <a href="#nav">메뉴 바로가기</a>
+        <a href="#section">본문 바로가기</a>
+    </div>
+    <header>
+        <h1>
+            <a href="#">test_box_hover_javascript</a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <li class="nav_gnb"><a href="#">menu01</a></li>
+                <li class="nav_gnb"><a href="#">menu02</a></li>
+                <li class="nav_gnb"><a href="#">menu03</a></li>
+                <li class="nav_gnb"><a href="#">menu04</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section">
+        <div class="test_box">
+            <a href="#">
+                <span class="org_span">원래스팬</span>
+                <span class="hov_span">짜란</span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <select name="#" id="asd" onchange="window.open(this.value)">
+            <option value="#"><a href="http://www.naver.com">NAVER</a></option>
+            <option value="#"><a href="http://www.daum.net">DAUM</a></option>
+            <option value="http://www.nate.com">NATE</option>
+            <option value="http://www.google.com">GOOGLE</option>
+        </select>
+    </section>
+</div>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/test_box_hover.js"></script>
+</body>
+</html>
